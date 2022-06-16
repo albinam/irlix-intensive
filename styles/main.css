@@ -1,0 +1,9 @@
+html, body {
+    font-size: 8px;
+    background-color: var(--main);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+}
