@@ -11,6 +11,7 @@ footer {
 
 .footer__button {
     background: var(--button);
+    color: var(--text);
     margin: 24px 32px;
     height: 48px;
     width: 145px;
