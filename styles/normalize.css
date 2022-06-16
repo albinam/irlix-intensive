@@ -37,3 +37,12 @@ q:before, q:after {
 abbr, acronym {
     border: 0;
 }
+
+html, body {
+    background-color: var(--main);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+}
