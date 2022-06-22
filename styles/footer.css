@@ -1,6 +1,6 @@
 
 footer {
-    background-color: var(--footer);
+    background-color: var(--c-footer);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -10,8 +10,8 @@ footer {
 }
 
 .footer__button {
-    background: var(--button);
-    color: var(--text);
+    background: var(--c-button);
+    color: var(--c-text);
     margin: 24px 32px;
     height: 48px;
     width: 145px;

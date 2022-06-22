@@ -39,10 +39,11 @@ abbr, acronym {
 }
 
 html, body {
-    background-color: var(--main);
+    background-color: var(--c-main);
+    height: 100%;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    color: var(--text);
+    color: var(--c-text);
 }
