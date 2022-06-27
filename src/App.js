@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
+import Main from "./pages/main/main";
 
 function App() {
-  return (
-    <div className="App">
-     </div>
-  );
+    return (
+        <Main/>
+    );
 }
 
 export default App;

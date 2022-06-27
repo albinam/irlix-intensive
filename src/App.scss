@@ -1,0 +1,12 @@
+@import "assets/styles/variables";
+@import "assets/styles/normalize.css";
+
+html, body {
+    background-color: $--c-main;
+    height: 100%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: $--c-text;
+}
