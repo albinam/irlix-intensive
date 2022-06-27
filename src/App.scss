@@ -2,11 +2,10 @@
 @import "assets/styles/normalize.css";
 
 html, body {
-    background-color: $--c-main;
-    height: 100%;
+    background-color: $--c-main-background;
 }
 
-p {
+p,div {
     font-family: 'Roboto', sans-serif;
     color: $--c-text;
 }
