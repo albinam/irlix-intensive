@@ -37,13 +37,3 @@ q:before, q:after {
 abbr, acronym {
     border: 0;
 }
-
-html, body {
-    background-color: var(--c-main);
-    height: 100%;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: var(--c-text);
-}
