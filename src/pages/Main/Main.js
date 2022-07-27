@@ -1,9 +1,9 @@
 import React from 'react';
-import './main.scss';
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
+import './Main.scss';
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import {drinks} from "../../assets/data/temporaryData";
-import Card from "../../components/card/card";
+import Card from "../../components/Card/Card";
 
 function Main() {
     return (
