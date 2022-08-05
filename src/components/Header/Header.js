@@ -1,6 +1,7 @@
 import React from 'react';
 import {ReactComponent as Logo} from '../../assets/images/logo.svg';
 import './Header.scss';
+import CategoryBar from "./CategoryBar/CategoryBar";
 
 function Header() {
     return (
@@ -16,12 +17,7 @@ function Header() {
                     </a>
                 </div>
             </div>
-            <ul className='header__filter'>
-                <li className='header__filter-button'>Новинки</li>
-                <li className='header__filter-button'>Сладкие</li>
-                <li className='header__filter-button'>Хит</li>
-                <li className='header__filter-button'>Крепкие</li>
-            </ul>
+            <CategoryBar/>
         </header>
     )
 }

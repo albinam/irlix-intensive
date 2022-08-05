@@ -1,0 +1,25 @@
+@import "./src/assets/styles/variables";
+
+.header__filter {
+  display: flex;
+  margin: 32px 0 0 32px;
+  overflow: auto;
+  height: 41px;
+}
+
+.header__filter::-webkit-scrollbar {
+  display: none;
+}
+
+.header__filter-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: $--c-text-secondary;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.header__filter-button:active {
+  border: 1px solid $--c-text-secondary;
+  border-radius: 32px;
+}
