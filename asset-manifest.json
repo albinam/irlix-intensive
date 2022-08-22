@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/irlix-intensive/static/css/main.e50e7a6b.css",
-    "main.js": "/irlix-intensive/static/js/main.1b5f04b7.js",
+    "main.js": "/irlix-intensive/static/js/main.fa29fdbd.js",
     "static/media/blackberry.png": "/irlix-intensive/static/media/blackberry.70c84ed06703a415a2e0.png",
     "static/media/logo.svg": "/irlix-intensive/static/media/logo.5bc322701a9371c487404fb8710137bd.svg",
     "index.html": "/irlix-intensive/index.html",
     "static/media/button-back.svg": "/irlix-intensive/static/media/button-back.1b4561562f144df41ed42cfa2ac155aa.svg",
     "main.e50e7a6b.css.map": "/irlix-intensive/static/css/main.e50e7a6b.css.map",
-    "main.1b5f04b7.js.map": "/irlix-intensive/static/js/main.1b5f04b7.js.map"
+    "main.fa29fdbd.js.map": "/irlix-intensive/static/js/main.fa29fdbd.js.map"
   },
   "entrypoints": [
     "static/css/main.e50e7a6b.css",
-    "static/js/main.1b5f04b7.js"
+    "static/js/main.fa29fdbd.js"
   ]
 }
