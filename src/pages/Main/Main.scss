@@ -1,8 +1,7 @@
 .cards {
   display: flex;
+  justify-content: flex-start;
   flex-flow:row wrap;
-  justify-content: space-evenly;
-  gap: 32px;
-  padding: 0 32px;
-  margin: 210px auto 128px auto ;
+  gap:0 32px;
+  margin: 210px auto 128px 32px ;
 }

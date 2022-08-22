@@ -1,4 +1,26 @@
 import blackberry from "../images/blackberry.png";
+export const categories = [
+    {
+        id:4,
+        title: "Все"
+    },
+    {
+        id:0,
+        title: "Новинки"
+    },
+    {
+        id:1,
+        title: "Сладкие"
+    },
+    {
+        id:2,
+        title: "Хит"
+    },
+    {
+        id:3,
+        title: "Крепкие"
+    }
+];
 
 export const drinks = [
     {

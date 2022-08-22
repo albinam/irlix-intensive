@@ -17,7 +17,7 @@ function Card({image, title, subtitle, degree}) {
             </div>
             <div className='card__degree'>
                 <div className='card__degree-wrapper'>
-                    <div className='card__degree-value'>{degree}</div>
+                    <div className='card__degree-value'>{degree}%</div>
                     <div className='card__degree-title'>Алкоголь</div>
                 </div>
             </div>
