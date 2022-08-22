@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Card(drink) {
     return (
-        <Link to={`/drink/${drink.drink.id}` }>
+        <Link to={`/irlix-intensive/drink/${drink.drink.id}` }>
             <aside className='card'>
                 <div className='card__image-wrapper'>
                     <img className='card__image' src={drink.drink.image} alt="Напиток"/>

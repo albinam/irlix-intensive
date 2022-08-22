@@ -14,7 +14,6 @@ function Detail() {
         if (loading) {
             dispatch(getDrink(id));
         }
-        console.log(drink)
         if (drink !== null) {
 
             setLoading(false);
