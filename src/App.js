@@ -10,8 +10,8 @@ function App() {
         <Provider store={store}>
             <BrowserRouter>
                 <Routes>
-                    <Route exact path="/" element={<Main/>}/>
-                    <Route exact path="/drink/:id" element={<Detail/>}/>
+                    <Route exact path="/irlix-intensive/" element={<Main/>}/>
+                    <Route exact path="/irlix-intensive/drink/:id" element={<Detail/>}/>
                 </Routes>
             </BrowserRouter>
         </Provider>
