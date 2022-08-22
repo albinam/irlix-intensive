@@ -25,3 +25,10 @@ export function setSearchTitle(title) {
         payload: title
     }
 }
+
+export function setDrink(drink) {
+    return {
+        type: 'SET_DRINK',
+        payload: drink
+    }
+}
