@@ -3,6 +3,7 @@ import DetailCard from "../../components/DetailCard/DetailCard";
 import {useDispatch, useSelector} from "react-redux";
 import {getDrink} from "../../assets/utils/getData";
 import {useParams} from "react-router-dom";
+import Loading from "../../components/Loading/Loading";
 
 function Detail() {
     const dispatch = useDispatch();
@@ -15,17 +16,15 @@ function Detail() {
             dispatch(getDrink(id));
         }
         if (drink !== null) {
-
             setLoading(false);
         }
-    }, [drink])
+    }, [drink,loading])
 
     return (
         <div>
-            {loading ? <div>Loading</div> : <div>
+            {loading ? <Loading/> : <div>
                 <DetailCard key={drink.id} drink={drink}/>
             </div>
-
             }
         </div>
     )

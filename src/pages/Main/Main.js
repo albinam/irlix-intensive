@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 import {getDrinks} from "../../assets/utils/getData";
 import {useDispatch, useSelector} from "react-redux";
+import Loading from "../../components/Loading/Loading";
 
 function Main() {
     const dispatch = useDispatch();
@@ -18,11 +19,11 @@ function Main() {
         if (drinks.length !== 0) {
             setLoading(false);
         }
-    }, [drinks])
+    }, [drinks, loading])
 
     return (
         <div>
-            {loading ? <div>Loading</div> : <div>
+            {loading ? <Loading/> : <div>
                 <Header/>
                 <main className="main">
                     <div className="container">
