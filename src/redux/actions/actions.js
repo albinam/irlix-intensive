@@ -32,3 +32,15 @@ export function setDrink(drink) {
         payload: drink
     }
 }
+export function setDrinkLoading(state) {
+    return {
+        type: 'SET_DRINK_LOADING',
+        payload: state
+    }
+}
+export function setDrinksLoading(state) {
+    return {
+        type: 'SET_DRINKS_LOADING',
+        payload: state
+    }
+}

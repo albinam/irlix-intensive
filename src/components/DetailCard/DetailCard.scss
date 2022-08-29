@@ -26,11 +26,12 @@
   align-items: center;
 
   &__image-wrapper {
-    height: 351px;
-    margin-bottom: 32px;
+    max-width: 1024px;
   }
 
   &__image {
+    height: 351px;
+    object-fit: cover;
     width: 100%;
   }
 

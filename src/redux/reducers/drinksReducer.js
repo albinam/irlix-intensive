@@ -26,8 +26,17 @@ export default function drinksReducer(state = initialState, action) {
                 loadingDrink: false,
                 drink: action.payload
             };
+        case 'SET_DRINK_LOADING':
+            return {
+                ...state,
+                loadingDrink: action.payload
+            };
+        case 'SET_DRINKS_LOADING':
+            return {
+                ...state,
+                loadingDrinks: action.payload
+            };
         case 'SET_CATEGORY':
-            console.log(state.drinks)
             return {
                 ...state,
                 selectedCategory: action.payload,
