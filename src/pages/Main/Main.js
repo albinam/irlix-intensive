@@ -11,11 +11,9 @@ import EmptyCard from "../../components/Card/EmptyCard";
 function Main() {
     const dispatch = useDispatch();
     const drinks = useSelector(state => state.drinks.drinks);
-    const loading = useSelector(state => state.drinks.loading);
+    const loading = useSelector(state => state.drinks.loadingDrinks);
 
     useEffect(() => {
-        console.log(loading)
-        console.log(drinks)
         if (loading) {
             dispatch(getDrinks());
         }

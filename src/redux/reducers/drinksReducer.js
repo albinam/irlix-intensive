@@ -4,14 +4,15 @@ const initialState = {
     selectedCategory:null,
     searchTitle:"",
     drink:null,
-    loading:true
+    loadingDrinks:true,
+    loadingDrink:true
 }
 export default function drinksReducer(state = initialState, action) {
     switch (action.type) {
         case 'SET_DRINKS':
             return {
                 ...state,
-                loading: false,
+                loadingDrinks: false,
                 drinks: action.payload
             };
         case 'SET_FILTERED_DRINKS':
@@ -22,6 +23,7 @@ export default function drinksReducer(state = initialState, action) {
         case 'SET_DRINK':
             return {
                 ...state,
+                loadingDrink: false,
                 drink: action.payload
             };
         case 'SET_CATEGORY':
