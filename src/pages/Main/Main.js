@@ -10,17 +10,16 @@ import EmptyCard from "../../components/Card/EmptyCard";
 
 function Main() {
     const dispatch = useDispatch();
-    const drinks = useSelector(state => state.drinks.filteredDrinks);
-    const [loading, setLoading] = useState(true);
+    const drinks = useSelector(state => state.drinks.drinks);
+    const loading = useSelector(state => state.drinks.loading);
 
     useEffect(() => {
+        console.log(loading)
+        console.log(drinks)
         if (loading) {
             dispatch(getDrinks());
         }
-        if (drinks.length !== 0) {
-            setLoading(false);
-        }
-    }, [drinks, loading])
+    }, [loading])
 
     if (loading) {
         return (
@@ -42,7 +41,6 @@ function Main() {
                     <div className="container">
                         <section className='cards'>
                             {drinks.map(drink => {
-                                console.log(drink)
                                 return (
                                     <Card key={drink.id} drink={drink}/>
                                 )

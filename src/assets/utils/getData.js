@@ -11,9 +11,10 @@ const myAxios = axios.create({
 export const getDrinks = () => {
     return (dispatch) => {
         myAxios.get('/drinks')
-            .then((resp) => {
-                dispatch(setDrinks(resp.data));
-                dispatch(setFilteredDrinks(resp.data));
+            .then(async (resp) => {
+                const res = await resp;
+                dispatch(setDrinks(res.data));
+                dispatch(setFilteredDrinks(res.data));
             })
     }
 }
@@ -22,7 +23,6 @@ export const getDrink = (id) => {
     return (dispatch) => {
         myAxios.get(`/drinks/${id}`)
             .then((resp) => {
-                console.log(resp.data)
                 dispatch(setDrink(resp.data));
             })
     }
