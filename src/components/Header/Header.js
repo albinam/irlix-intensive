@@ -12,7 +12,7 @@ const Header = memo(() => {
                     <p className="header__date">17 июля 2021</p>
                 </div>
                 <div className="header__logo">
-                    <a href="/">
+                    <a href="/irlix-intensive">
                         <Logo/>
                     </a>
                 </div>
