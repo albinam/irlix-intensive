@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/irlix-intensive/static/css/main.6214713c.css",
-    "main.js": "/irlix-intensive/static/js/main.cbfb2179.js",
+    "main.css": "/irlix-intensive/static/css/main.9cc07f47.css",
+    "main.js": "/irlix-intensive/static/js/main.5de632a3.js",
     "static/media/blackberry.png": "/irlix-intensive/static/media/blackberry.70c84ed06703a415a2e0.png",
     "static/media/empty.jpg": "/irlix-intensive/static/media/empty.0d235a4b8d16a5a38bb5.jpg",
     "static/media/logo.svg": "/irlix-intensive/static/media/logo.5bc322701a9371c487404fb8710137bd.svg",
     "index.html": "/irlix-intensive/index.html",
     "static/media/button-back.svg": "/irlix-intensive/static/media/button-back.1b4561562f144df41ed42cfa2ac155aa.svg",
-    "main.6214713c.css.map": "/irlix-intensive/static/css/main.6214713c.css.map",
-    "main.cbfb2179.js.map": "/irlix-intensive/static/js/main.cbfb2179.js.map"
+    "main.9cc07f47.css.map": "/irlix-intensive/static/css/main.9cc07f47.css.map",
+    "main.5de632a3.js.map": "/irlix-intensive/static/js/main.5de632a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6214713c.css",
-    "static/js/main.cbfb2179.js"
+    "static/css/main.9cc07f47.css",
+    "static/js/main.5de632a3.js"
   ]
 }
