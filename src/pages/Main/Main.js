@@ -6,6 +6,7 @@ import Card from "../../components/Card/Card";
 import {getDrinks} from "../../assets/utils/getData";
 import {useDispatch, useSelector} from "react-redux";
 import Loading from "../../components/Loading/Loading";
+import EmptyCard from "../../components/Card/EmptyCard";
 
 function Main() {
     const dispatch = useDispatch();
@@ -21,9 +22,21 @@ function Main() {
         }
     }, [drinks, loading])
 
-    return (
-        <div>
-            {loading ? <Loading/> : <div>
+    if (loading) {
+        return (
+            <Loading/>
+        )
+    } else if (drinks.length === 0) {
+        return (
+            <div className="empty-card">
+                <Header/>
+                <EmptyCard/>
+                <Footer/>
+            </div>
+        )
+    } else {
+        return (
+            <div>
                 <Header/>
                 <main className="main">
                     <div className="container">
@@ -39,9 +52,8 @@ function Main() {
                 </main>
                 <Footer/>
             </div>
-            }
-        </div>
-    )
+        )
+    }
 }
 
 export default Main;
