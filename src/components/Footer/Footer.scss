@@ -16,7 +16,7 @@ footer {
   color: $--c-text-secondary;
   margin: 24px 32px 24px 32px;
   height: 48px;
-  width: 145px;
+  width: 101px;
   border-radius: 32px;
   border: none;
   font-size: 18px;
@@ -29,6 +29,6 @@ footer {
   width: calc(100% - 64px);
   transition: width .3s linear;
   text-align: left;
-  padding-left: 15px;
+  padding-left: 24px;
   border-radius: 32px;
 }
