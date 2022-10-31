@@ -5,30 +5,42 @@ import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
 import {getDrinks} from "../../assets/utils/getData";
 import {useDispatch, useSelector} from "react-redux";
+import Loading from "../../components/Loading/Loading";
+import EmptyCard from "../../components/Card/EmptyCard";
+import {setDrinksLoading} from "../../redux/actions/actions";
 
 function Main() {
     const dispatch = useDispatch();
     const drinks = useSelector(state => state.drinks.filteredDrinks);
-    const [loading, setLoading] = useState(true);
+    const loading = useSelector(state => state.drinks.loadingDrinks);
 
     useEffect(() => {
+        console.log(loading)
         if (loading) {
             dispatch(getDrinks());
         }
-        if (drinks.length !== 0) {
-            setLoading(false);
-        }
-    }, [drinks])
+    }, [loading])
 
-    return (
-        <div>
-            {loading ? <div>Loading</div> : <div>
+    if (loading) {
+        return (
+            <Loading/>
+        )
+    } else if (drinks?.length === 0) {
+        return (
+            <div className="empty-card">
+                <Header/>
+                <EmptyCard/>
+                <Footer/>
+            </div>
+        )
+    } else {
+        return (
+            <div>
                 <Header/>
                 <main className="main">
                     <div className="container">
                         <section className='cards'>
-                            {drinks.map(drink => {
-                                console.log(drink)
+                            {drinks?.map(drink => {
                                 return (
                                     <Card key={drink.id} drink={drink}/>
                                 )
@@ -38,9 +50,8 @@ function Main() {
                 </main>
                 <Footer/>
             </div>
-            }
-        </div>
-    )
+        )
+    }
 }
 
 export default Main;

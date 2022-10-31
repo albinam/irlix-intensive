@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {ReactComponent as Logo} from '../../assets/images/logo.svg';
 import './Header.scss';
 import CategoryBar from "./CategoryBar/CategoryBar";
 
-function Header() {
+const Header = memo(() => {
     return (
         <header className="header">
             <div className="header__top">
@@ -12,7 +12,7 @@ function Header() {
                     <p className="header__date">17 июля 2021</p>
                 </div>
                 <div className="header__logo">
-                    <a href="/">
+                    <a href="/irlix-intensive">
                         <Logo/>
                     </a>
                 </div>
@@ -20,6 +20,6 @@ function Header() {
             <CategoryBar/>
         </header>
     )
-}
+})
 
-export default Header;
+export default memo(Header);
