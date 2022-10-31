@@ -28,9 +28,9 @@ function Main() {
                     <div className="container">
                         <section className='cards'>
                             {drinks.map(drink => {
+                                console.log(drink)
                                 return (
-                                    <Card key={drink.id} image={drink.image} title={drink.title} degree={drink.degree}
-                                          subtitle={drink.subtitle}/>
+                                    <Card key={drink.id} drink={drink}/>
                                 )
                             })}
                         </section>
